@@ -21,7 +21,7 @@ using namespace std;
 int main()
 {
     int a,b,s;
-    cout.setf(ios::showbase);   //要求输出显示控制符？？
+    cout.setf(ios::showbase);   //对输出的八进制和十六进制数使用前缀0和0x
     a=00137;
     b=023362;
     s=a+b;
