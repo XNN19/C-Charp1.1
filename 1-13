@@ -1,0 +1,40 @@
+//条件表达式，嵌套
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,max;
+    cin>>a>>b>>c;
+    max=a>b?a>c?a:c:b>c?b:c;//<=>a>b?(a>c?a:c):(b>c?b:c)
+    cout <<"max="<<max<<endl;
+    return 0;
+}
+
+//用不同数制输出两个正整数的和
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    int a,b,s;
+    cout.setf(ios::showbase);   //要求输出显示控制符？？
+    a=00137;
+    b=023362;
+    s=a+b;
+    cout<<"八进制数\t";
+    cout<<oct<<a<<"+"<<b<<"="<<s<<endl;//oct代表用八进制输出，可以分开写成cout<<oct;cout<<...
+    a=239;
+    b=5618;
+    s=a+b;
+    cout<<"十进制数\t";
+    cout<<dec<<a<<"+"<<b<<"="<<s<<endl;   //dec->十进制
+    a=0x1a3e;
+    b=0x4bf;
+    s=a+b;
+    cout<<"十六进制数\t";                  //hex->十六进制
+    cout<<hex<<a<<"+"<<b<<"="<<s<<endl;
+}
